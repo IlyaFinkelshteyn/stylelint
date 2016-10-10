@@ -3,6 +3,7 @@ import path from "path"
 import postcssPlugin from "../postcssPlugin"
 import test from "tape"
 
+/*
 test("`config` option is `null`", t => {
   postcssPlugin.process("a {}")
     .then(() => {
@@ -14,6 +15,7 @@ test("`config` option is `null`", t => {
       t.end()
     })
 })
+*/
 
 test("`configFile` option with absolute path", t => {
   const config = {
