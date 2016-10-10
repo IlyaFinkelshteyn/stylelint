@@ -20,3 +20,6 @@ test_script:
   - node --version
   - npm --version
   - cmd: "npm test"
+
+on_finish:
+  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
